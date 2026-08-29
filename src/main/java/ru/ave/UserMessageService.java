@@ -1,12 +1,11 @@
 package ru.ave;
 
-import org.springframework.stereotype.Component;
+public interface UserMessageService {
 
-//@Component
-public class UserMessageService {
+    String createMessage(String name);
 
-    public String createMessage(String name) {
-        return "Привет, " + name + ", добро пожаловать!";
+    default void testMethod() {
+        System.out.println("default realization");
     }
 
 }

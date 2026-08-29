@@ -9,7 +9,8 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         UserMessagePrinter printer = context.getBean(UserMessagePrinter.class);
-        printer.printMessage("Alex");
+        printer.printMessage("alEx");
+        printer.testMethodPrinter();
     }
 
 }
