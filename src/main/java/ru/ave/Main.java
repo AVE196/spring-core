@@ -4,12 +4,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Main {
 
-    public static void main(String[] args) {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext("ru.ave");
-        //AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(LibraryConfig.class);
+    static void main() {
 
-        Library library = applicationContext.getBean(Library.class);
-        System.out.println(library.getBook());
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+
+        UserMessagePrinter printer = context.getBean(UserMessagePrinter.class);
+        printer.printMessage("Alex");
     }
 
 }
