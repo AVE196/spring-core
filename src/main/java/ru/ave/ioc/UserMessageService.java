@@ -1,4 +1,4 @@
-package ru.ave;
+package ru.ave.ioc;
 
 public interface UserMessageService {
 

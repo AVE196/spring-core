@@ -1,4 +1,4 @@
-package ru.ave;
+package ru.ave.ioc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

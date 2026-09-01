@@ -1,4 +1,4 @@
-package ru.ave;
+package ru.ave.ioc;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;

@@ -1,11 +1,11 @@
-package ru.ave;
+package ru.ave.ioc;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("ru.ave")
-public class AppConfig {
+@ComponentScan("ru.ave.ioc")
+public class AppConfigIoC {
 
 //    @Bean
 //    public UserMessageService userMessageService(){
